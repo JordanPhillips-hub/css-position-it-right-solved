@@ -1,38 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
 .robot-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .robot-face-shape {
+  position: relative;
+  background-color: orangered;
+  width: 300px;
+  height: 300px;
+  z-index: 100;
 }
 
 .robot-eye-left {
+  top: 50px;
+  position: absolute;
+  left: 70px;
+  background-color: aqua;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
 }
 
 .robot-eye-right {
+  position: absolute;
+  right: 70px;
+  top: 50px;
+  background-color: aqua;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 .robot-ear-left {
+  position: relative;
+  width: 100px;
+  height: 90px;
+  bottom: 230px;
+  left: -40px;
+}
+
+.robot-ear-left::before,
+.robot-ear-left::after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background-color: peachpuff;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.robot-ear-left::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
 }
 
 .robot-ear-right {
+  position: relative;
+  width: 100px;
+  height: 90px;
+  bottom: 317px;
+  right: -240px;
 }
 
-.robot-nose {
+.robot-ear-right::before,
+.robot-ear-right::after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background-color: peachpuff;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
 }
+
+.robot-ear-right::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.robot-nose {}
 
 .robot-teeth {
+  position: relative;
+  top: 170px;
+  left: 48px;
+  width: 200px;
+  height: 100px;
+  background: peachpuff;
+  border-radius: 100px / 50px;
 }
 
 .robot-tooth {
+  position: absolute;
+  width: 10px;
+  height: 25px;
+  background: green;
 }
 
-.robot-hair-style {
+.tooth-one {
+  top: 20px;
+  left: 13px;
 }
 
-.robot-hair-one {
-}
+.robot-hair-style {}
 
-.robot-hair-two {
-}
+.robot-hair-one {}
 
-.robot-hair-three {
-}
+.robot-hair-two {}
+
+.robot-hair-three {}
