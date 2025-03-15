@@ -90,9 +90,9 @@ This assignment should prove that a student is able to:
   - [ x ] The width and / or height height of at least one shape should be based on the percentage units relative to the dimensions of the face shape.
   - [ x ] The width and / or height of at least one shape should be based on relative units relative to the font size.
   - [ x ] At least one shape should have an opacity of 50% or be semi-transparent.
-- [ ] Position the shapes inside or outside the face shape according to the following guidelines:
-  - [ ] In-face elements should be positioned in relation to their static position.
-  - [ ] External face shapes should be positioned in relation to the robot container or the face shape.
+- [ x ] Position the shapes inside or outside the face shape according to the following guidelines:
+  - [ x ] In-face elements should be positioned in relation to their static position.
+  - [ x ] External face shapes should be positioned in relation to the robot container or the face shape.
 
 `For the Legal Page exercise`
 
