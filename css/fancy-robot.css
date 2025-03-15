@@ -24,7 +24,7 @@ body {
   top: 0;
   width: 50px;
   height: 80px;
-  background-color: peachpuff;
+  background-color: #FFE4C4;
   border-radius: 50px 50px 0 0;
   transform: rotate(-45deg);
   transform-origin: 0 100%;
@@ -43,10 +43,10 @@ body {
 }
 
 .robot-eye {
-  background-color: aqua;
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 15%;
+  height: 15%;
   top: 50px;
   border-radius: 50%;
 }
@@ -73,18 +73,24 @@ body {
 }
 
 .robot-face-shape {
-  background-color: orangered;
+  position: relative;
+  background-image: url(https://picsum.photos/300/300);
+  background-size: cover;
+  background-position: center;
   width: 300px;
   height: 300px;
   z-index: 100;
+  border-radius: 15px;
+  border: 1pxx solid white;
+
 }
 
 .robot-eye-left {
-  left: 70px;
+  left: 22%;
 }
 
 .robot-eye-right {
-  right: 70px;
+  right: 22%;
 }
 
 .robot-ear-left {
@@ -97,14 +103,23 @@ body {
   right: -240px;
 }
 
-.robot-nose {}
+.robot-nose {
+  position: absolute;
+  width: 3.125rem;
+  height: 1.5625rem;
+  top: 40%;
+  left: 42%;
+  background: darkred;
+  border-radius: 100px / 50px;
+  opacity: 50%;
+}
 
 .robot-mouth {
   top: 170px;
   left: 48px;
   width: 210px;
   height: 105px;
-  background: peachpuff;
+  background: #FFE4C4;
   border-radius: 100px / 50px;
 }
 
@@ -179,10 +194,44 @@ body {
   transform: rotate(180deg);
 }
 
-.robot-hair-style {}
+.robot-hair-style {
+  position: absolute;
+  top: -10%;
+  border-bottom: 100px solid red;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  width: 300px;
 
-.robot-hair-one {}
+}
 
-.robot-hair-two {}
+.robot-hair-one {
+  position: absolute;
+  bottom: -60px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+}
 
-.robot-hair-three {}
+.robot-hair-two {
+  position: absolute;
+  bottom: -60px;
+  left: 73px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+}
+
+.robot-hair-three {
+  position: absolute;
+  bottom: -60px;
+  right: 0px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+}
